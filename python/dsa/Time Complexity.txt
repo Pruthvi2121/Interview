@@ -1,0 +1,6 @@
+1. Measuring Time
+2. Counting the operation
+3. Order of growth - 
+    1. We want to evaluate the algorithm
+    2. We want to evaluate scalability
+    3. We want to evaluate in terms of input size

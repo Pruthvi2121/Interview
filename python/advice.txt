@@ -1,0 +1,4 @@
+1. create test case list 
+2. State the solution (eg writing step of algorithm)
+3. Don't underastimate the power of writing. 
+4. Add nice print statement to understand inner working of the code.

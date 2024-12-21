@@ -1,0 +1,43 @@
+Algorithm -
+   An algorithm is the set of instruction to to solve perticular problem.
+   characterstics -
+     1. Well defined defined input and output
+     2. Each step should be clear and umbigious
+     3. Lanaguage Independant.
+     4. One problem can be solved in different ways using different algorithms.
+
+Algorithm analysis 
+The absoulate running time of an algorithm cannot be redicted, since it depends on a number of factors.
+    1. Programming lanaugage 
+    2. Operating System.
+    3. programs running at same time
+
+
+Algorithm analysiss contd
+- We can evaluate the performance of an algorithm in terms of its input size.
+- Time Complexity -
+  - Amount of time taken by an algorithm to run, as a funtion of input size.
+- Space Complexity -
+  - Amount of space taken by an algorithm to run, as a funtion of input size.
+
+
+- By evaluating the against  the input size, the analysis is not only machine independent but the comparison is 
+also more appropriate.
+
+######################################################################################################
+Time Complexity
+Asymptotic notations
+-   Mathemeatical tools to represent time and space complexity
+     -  Big-O Notation - Worst case complexity.
+     -  Omega Notation - Best case complexity.
+     -  Theta Notation - Average case complexity.
+
+1. Big-O Notation
+  - Big-O notation 
+    - THe worst case coplexity of an algoirthm is represented using the Big-O notation
+    - Big O notation describe the compleixty of an algorithm using algebraic terms.
+    - It has two important characterstics
+        - It is expressed in terms of input
+        - It focuses on bigger picture without getting caught up in the minute detail
+
+ #####################################################################################################
