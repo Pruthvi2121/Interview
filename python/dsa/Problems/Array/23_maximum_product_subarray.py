@@ -38,29 +38,35 @@ def solution_m1(arr):
     return max_product
 
 def solution_m2(arr):
-    max_product_set = set()
-    n = len(arr) 
-    i = 0
-    prefix_prod = 1
-    while i < n: 
-        prefix_prod*=arr[i]
-        print("prefix", prefix_prod)
-        max_product_set.add(prefix_prod) 
+   
+    ans = arr[0]
+    left_prod = 1
+    right_prod = 1
+    n = len(arr)
+    i=0
+    while i< n:
+        # if zero
+        left_prod = 1 if left_prod == 0 else left_prod
+        right_prod = 1 if right_prod == 0 else right_prod
+
+        # update
+        left_prod *= arr[i]
+        right_prod *=  arr[ n-i-1 ]
+
+        ans = max(ans, max(left_prod, right_prod))
+        
         i+=1
-    return max_product_set
-
-
-
+    return ans
 
     
 
 if __name__ =="__main__":
     arr = [-2, 6, -3, -10, 0, 2]
-    arr1 = [-1, -3, -10, 0, 6]
+    arr1 = [-1,-2,-3,0]
     arr2 = [2, 3, 4] 
     
     # print("method 1 : ", solution_m1(arr) , end="\n\n")
-    # print("method 1 : ", solution_m1(arr1) , end="\n\n")
+    print("method 1 : ", solution_m1(arr1) , end="\n\n")
     # print("method 1 : ", solution_m1(arr2) , end="\n\n")
 
     # print("method 2 : ", solution_m2(arr) , end="\n\n")
